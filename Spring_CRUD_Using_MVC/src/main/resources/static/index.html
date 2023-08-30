@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration-union</title>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h3>Student registration</h3>
+<div style="width:100%">
+<table style="width:100%">
+<tr>
+ <td style="width: 25%;">ID</td>
+ <td><input type="text" id="t1"/></td>
+</tr>
+<tr>
+ <td style="width: 25%;">Name</td>
+ <td><input type="text" id="t2"/></td>
+</tr>
+<tr>
+ <td style="width: 25%;">ContactNo</td>
+ <td><input type="text" id="t3"/></td>
+</tr>
+<tr>
+ <td style="width:25px;">Amount</td>
+ <td><input type="text" id="t4"/></td>
+</tr>
+<tr>
+ <td style="width:25px;">Status</td>
+ <td>
+  <select id="d1">
+   <option value="Not paid">Not paid</option>
+   <option value="Partially paid">Partially paid</option>
+   <option value="Completely paid">Completely paid</option>
+  </select>
+ </td>
+</tr>
+<tr>
+ <td></td>
+ <td><button onclick="register()">Register</button></td>
+</tr><br>
+<tr>
+ <td></td>
+ <td><label id="l1"></label></td>
+</tr>
+<br>
+<tr>
+ <td></td>
+ <td><button onclick="update()">Update Payment Status</button></td>
+</tr>
+<tr>
+ <td><button onclick="view()">Read Data</button>
+</td>
+</tr>
+<tr>
+ <td></td>
+ <td><button onclick="deleteData()">Delete Data</button></td>
+</tr>
+</table>
+</div>
+<div id="viewdata">
+	
+</div>
+</body>
+</html>
